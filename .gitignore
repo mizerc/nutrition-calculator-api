@@ -1,0 +1,4 @@
+data/nutrition-calculator-db.mv.db
+.DS_Store
+/data
+/target
