@@ -1,34 +1,6 @@
 # Nutrition Calculator API
 
-A robust backend platform for nutrition tracking and meal management, built with modern Java technologies and designed for scalability.
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-  - [Running the Application](#running-the-application)
-- [Features](#features)
-- [API Documentation](#api-documentation)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Overview
-
-The Nutrition Calculator API is a comprehensive backend solution that provides authentication, authorization, food database management, user profiles, and administrative capabilities. Built with enterprise-grade technologies, this platform is designed to support nutrition tracking applications with features including meal planning, food management, and premium subscription tiers.
-
-### Key Highlights
-
-- 🔐 JWT-based authentication and authorization
-- 🍎 Comprehensive food database with nutritional information
-- 🍽️ Meal planning and tracking capabilities
-- 👥 Multi-tier user management (Admin, Premium, Free)
-- 🚀 Containerized deployment with Docker
-- 📊 Planned dashboard analytics and reporting
+A in-progress API platform to serve a nutrition tracking and meal management, built with Java17 and Spring Framework.
 
 ## Tech Stack
 
@@ -40,69 +12,6 @@ The Nutrition Calculator API is a comprehensive backend solution that provides a
 - **Containerization:** Docker & Docker Compose
 - **CI/CD:** GitHub Actions
 - **Deployment:** DigitalOcean Droplet
-
-## Getting Started
-
-### Prerequisites
-
-Ensure you have the following installed on your system:
-
-- Java 17 or higher
-- Maven 3.6+
-- Docker & Docker Compose (for containerized deployment)
-- Git
-
-### Installation
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/mauricioize/nutrition-calculator-api.git
-cd nutrition-calculator-api
-```
-
-2. **Build the project**
-
-```bash
-mvn clean install
-```
-
-### Configuration
-
-1. **Create a `.env` file** in the project root with the following variables:
-
-```env
-JWT_SECRET=your_secure_jwt_secret_here
-DATABASE_URL=jdbc:postgresql://localhost:5432/nutrition_db
-DATABASE_USERNAME=your_db_username
-DATABASE_PASSWORD=your_db_password
-```
-
-2. **Application Properties**
-
-The application uses profile-based configuration:
-- `application.properties` - Base configuration
-- `application-local.properties` - Local development settings
-
-### Running the Application
-
-#### Using Maven
-
-```bash
-mvn spring-boot:run
-```
-
-#### Using Docker
-
-```bash
-# Build the Docker image
-make build
-
-# Run with Docker Compose
-make composeup
-```
-
-The API will be available at `http://localhost:8080`
 
 ## Features
 
@@ -161,8 +70,6 @@ PUT    /api/meals/{id}   - Update meal
 DELETE /api/meals/{id}   - Delete meal
 ```
 
-*Note: Detailed API documentation will be available via Swagger/OpenAPI (coming soon)*
-
 ## Roadmap
 
 ### Phase 1: Core Functionality ⏳
@@ -211,23 +118,3 @@ DELETE /api/meals/{id}   - Delete meal
 - [ ] Automated deployment to production droplet
 - [ ] Environment-specific configurations
 - [ ] Health checks and monitoring
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-**Maintained by:** [mauricioize](https://github.com/mauricioize)
-
-**Last Updated:** November 2025
