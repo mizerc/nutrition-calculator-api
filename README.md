@@ -1,6 +1,6 @@
 # Nutrition Calculator API
 
-A in-progress API platform to serve a nutrition tracking and meal management, built with Java17 and Spring Framework.
+An in-progress API platform for nutrition tracking and meal management, built with Java 17 and the Spring Framework.
 
 ## Tech Stack
 
